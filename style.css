@@ -50,6 +50,11 @@ button{
     background: #292929;
 }
 
+.button3{
+    border: transparent;
+    background-color:rgba(196, 196, 196, 0.5);
+}
+
 .title{
     position: center;
     width: auto;
@@ -71,6 +76,7 @@ button{
 .footer{
     padding: 0;
     margin: 0;
+    background: transparent!important;
 }
 
 footer p.description{
@@ -87,8 +93,8 @@ footer p.description{
 
     background: transparent;
     font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 14px;
     line-height: 30px;
 
     text-align: center;
@@ -138,31 +144,83 @@ footer p.description{
     flex-grow: 0;
 }
 
+.card2{
+    flex-direction: column !important;
+}
+
 body{
     background: #121212;
     margin: 0px;
 }
 
+.asterisk{
+    font-size: 12px;
+    font-weight: 100;
+    margin: 10px;
+    line-height: 24px;
+}
+
 .section em{
-    text-emphasis: none;
     text-decoration: line-through;
 }
 
+.references{
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+}
+
 .reference{
-    width: auto;
-    padding: 1em;
+    font-weight: normal;
+    flex: 0 0 85vw;
+    font-size: 12px;
+    align-items: flex-start;
+    margin: 10px;
+    width: 300px;
+    height: auto;
+    padding: 40px;
     background: #292929;
     border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.referenceText{
+    line-height: 29px;
 }
 
 .icon{
-    background: transparent;
+    margin: 10px;
 }
 
 .names{
-    background: transparent;
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
 }
 
 .section{
     margin: 70px 0px;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.special{
+    background-color: rgb(187, 134, 252,0.25)!important;
+}
+
+ul{
+    font-weight: normal;
+    font-size: 12px;
+    margin: 20px 0px;
+    line-height: 29px;
+}
+
+.cena{
+    color: #976FC8;
+}
+
+strong{
+    padding: 4px;
 }
