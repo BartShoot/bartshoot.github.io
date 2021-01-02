@@ -7,8 +7,29 @@
 </head>
 
 <body>
+    <div class="menu">
+        <img src="Images/logo.svg" alt="TagIt logo">
+        <img src="Images/menuButton.svg" alt="Menu button">
+        <button class="button button1">Pobierz</button>
+    </div>
+    <script type="text/javascript">
+        var lastScrollTop = 0;
+            menu = document.getElementById("menu");
+        window.addEventListener("scroll", function(){
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop>lastScrollTop){
+                menu.style.bottom="-7.5vw"
+            }
+            else{
+                menu.style.bottom="0"
+            }
+            lastScrollTop = scrollTop;
+        })
+    </script>
     <div class="start">
+        <div class="spacing"></div>
         <h2 class="title">Foldery to przeszłość, taguj to</h2>
+        <div class="spacing"></div>
         <p class="description">Powitajcie menadżer plików na miarę XXI wieku.
             Koniec z panicznym trzymaniem się struktury folderów.
             Zobacz jak jednym prostym trickiem rewolucjonizujemy zasady przechowywania plików.</p>
@@ -26,22 +47,23 @@
             <div class="textContainer">
                 <div class="cardTitle">
                     <img src="Images/easy.png" alt="easy icon" class="icon">
-                    <h2 class="title">Taguj w dwa kliknięcia</h2>
+                    <h2 class="title inCard">Taguj w dwa kliknięcia</h2>
                 </div>
-                <p class="description">TagIt został zaprojektowany z myślą o użykowniku.
+                <p class="description inCard">TagIt został zaprojektowany z myślą o użykowniku.
                     Wszystkie najczęstsze akcje są tak naturalne jak oddychanie.</p>
                 <div class="cardTitle">
                     <img src="Images/brain.svg" alt="brain icon" class="icon">
-                    <h2 class="title">Prawdziwa inteligencja*</h2>
+                    <h2 class="title inCard">Prawdziwa inteligencja*</h2>
                 </div>
-                <p class="description">Nasz ciągle uczący się asystent rozumie że każdy inaczej zarzadza swoimi plikami. Z czasem wszystkie pliki będą otagowane tak jakbyś zrobił to samemu.</p>
+                <p class="description inCard">Nasz ciągle uczący się asystent rozumie że każdy inaczej zarzadza swoimi plikami. Z czasem wszystkie pliki będą otagowane tak jakbyś zrobił to samemu.</p>
                 <div class="cardTitle">
                     <img src="Images/tag.svg" alt="tag icon" class="icon">
-                    <h2 class="title">Tagi bez granic*</h2>
+                    <h2 class="title inCard">Tagi bez granic*</h2>
                 </div>
-                <p class="description">Ilość tagów ogranicza tylko Twoja wyobraźnia i praktyczność.
+                <p class="description inCard">Ilość tagów ogranicza tylko Twoja wyobraźnia i praktyczność.
                     Program po zainstalowaniu posiada kilka podstawowych kategorii które łatwo można rozbudować o gotowe paczki lub tworzyć wszystkie samemu.</p>
             </div>
+            <img src="Images/horizontal scroll.svg" alt="horizontal scroll icon" class="icon">
             <img src="Images/Frame 1.webp" alt="file search screenshot">
             <!--TODO dodaj większe wersje obrazków-->
         </div>
@@ -56,21 +78,22 @@
             <div class="textContainer">
                 <div class="cardTitle">
                     <img src="Images/speed.svg" alt="timer icon" class="icon">
-                    <h2 class="title">Niesamowicie szybki</h2>
+                    <h2 class="title inCard">Niesamowicie szybki</h2>
                 </div>
-                <p class="description">Twórz podglądy swoich prac w sekundy bez potrzeby ingerencji człowieka.</p>
+                <p class="description inCard">Twórz podglądy swoich prac w sekundy bez potrzeby ingerencji człowieka.</p>
                 <div class="cardTitle">
                     <img src="Images/curve.svg" alt="curve icon" class="icon">
-                    <h2 class="title">Wybitnie elastyczny</h2>
+                    <h2 class="title inCard">Wybitnie elastyczny</h2>
                 </div>
-                <p class="description">Nasz algorytm wybrał złe ujęcie? Nie ma sprawy, nasz generator podglądów daje dostęp do wszystkich parametrów.</p>
+                <p class="description inCard">Nasz algorytm wybrał złe ujęcie? Nie ma sprawy, nasz generator podglądów daje dostęp do wszystkich parametrów.</p>
                 <div class="cardTitle">
                     <img src="Images/hands.svg" alt="hands icon" class="icon">
-                    <h2 class="title">Całkowicie nieobowiązkowy</h2>
+                    <h2 class="title inCard">Całkowicie nieobowiązkowy</h2>
                 </div>
-                <p class="description">Rozumiemy że nie każdy potrzebuje tej opcji.
+                <p class="description inCard">Rozumiemy że nie każdy potrzebuje tej opcji.
                     W każdej chwili można wyłączyć tą usługe.</p>
             </div>
+            <img src="Images/horizontal scroll.svg" alt="horizontal scroll icon" class="icon">
             <img src="Images/Frame 4.webp" alt="3d preview screenshot">
         </div>
     </div>
@@ -94,19 +117,22 @@
             <div class="textContainer">
                 <div class="cardTitle">
                     <img src="Images/folder.svg" alt="folder icon" class="icon">
-                    <h2 class="title">Działa dokładnie tak jak się tego spodziewasz</h2>
+                    <h2 class="title inCard">Działa dokładnie tak jak się tego spodziewasz</h2>
                 </div>
-                <p class="description">Nie próbowaliśmy wymyślać koła na nowo.
+                <p class="description inCard">Nie próbowaliśmy wymyślać koła na nowo.
                     Widok folderów działa dokładnie tak samo jak cała reszta konkurencji.</p>
                 <div class="cardTitle">
                     <img src="Images/plus.svg" alt="plus icon" class="icon">
-                    <h2 class="title">Nie martw się, nie zapomnieliśmy o tagach</h2>
+                    <h2 class="title inCard">Nie martw się, nie zapomnieliśmy o tagach</h2>
                 </div>
-                <p class="description">Nadal uważamy że tagi to podstawa.
+                <p class="description inCard">Nadal uważamy że tagi to podstawa.
                     Nic nie stoi na przeszkodzie żeby używać TagIt jako zwykłego eksploratora plików</p>
-                <h2 class="title">To jak, przekonaliśmy Cię?</h2>
-                <button class="button button1">Pobierz <strong>darmową</strong> wersje</button>
+                <div class="cardSpecial">
+                    <h2 class="title">To jak, przekonaliśmy Cię?</h2>
+                    <button class="button button1">Pobierz <strong>darmową</strong> wersje</button>
+                </div>
             </div>
+            <img src="Images/horizontal scroll.svg" alt="horizontal scroll icon" class="icon">
             <img src="Images/Frame 6.webp" alt="folder view screenshot">
         </div>
     </div>
@@ -204,14 +230,14 @@
     </div>
     <div class="card footer">
         <div class="footer">
-            <p class="description">Rzeczy w stopce</p>
-            <p class="description">Rzecz 1</p>
-            <p class="description">Rzecz 2</p>
-            <p class="description">Rzecz 3</p>
-            <p class="description">Rzecz 4</p>
+            <p class="description inFooter">Rzeczy w stopce</p>
+            <p class="description inFooter">Rzecz 1</p>
+            <p class="description inFooter">Rzecz 2</p>
+            <p class="description inFooter">Rzecz 3</p>
+            <p class="description inFooter">Rzecz 4</p>
         </div>
         <div class="footer">
-            <p class="description">Linki</p>
+            <p class="description inFooter">Linki</p>
             <div>
                 <img src="Images/github.svg" alt="github logo" class="icons">
                 <img src="Images/instagram.svg" alt="instagram logo" class="icons">
