@@ -9,24 +9,21 @@
 <body>
     <div class="menu">
         <img src="Images/logo.svg" alt="TagIt logo">
-        <img src="Images/menuButton.svg" alt="Menu button">
+        <div class="dropdown">
+            <img src="Images/menuButton.svg" alt="Menu button" class="dropbtn">
+        <div class="dropdown-content">
+            <a href="#section 1">1 sekcja</a>
+            <a href="#section 2">2 sekcja</a>
+            <a href="#section 3">3 sekcja</a>
+            <a href="#section 4">4 sekcja</a>
+            <a href="#section 5">5 sekcja</a>
+            <a href="#section 6">6 sekcja</a>
+            <a href="#section 7">7 sekcja</a>
+        </div>
+        </div>
         <button class="button button1">Pobierz</button>
     </div>
-    <script type="text/javascript">
-        var lastScrollTop = 0;
-            menu = document.getElementById("menu");
-        window.addEventListener("scroll", function(){
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollTop>lastScrollTop){
-                menu.style.bottom="-7.5vw"
-            }
-            else{
-                menu.style.bottom="0"
-            }
-            lastScrollTop = scrollTop;
-        })
-    </script>
-    <div class="start">
+    <div id="section 1" class="start">
         <div class="spacing"></div>
         <h2 class="title">Foldery to przeszłość, taguj to</h2>
         <div class="spacing"></div>
@@ -38,7 +35,7 @@
             <button class="button button2">Zobacz płatne benefity</button>
         </div>
     </div>
-    <div class="section">
+    <div id="section 2" class="section">
         <h2 class="title">TagIt - Najlepsze co Cię w życiu spotkało</h2>
         <p class="description">Nasze oprogramowanie pozwala na intuicyjne szukanie plików.
             Nie musisz już bawić się w magiczne zaklęcia aby szybko znaleźć czego potrzebujesz.
@@ -70,7 +67,7 @@
         <p class="asterisk">*Ilość tagów w darmowej wersji jest ograniczona.
             Asystent nie jest dostępny dla darmowych klientów</p>
     </div>
-    <div class="section">
+    <div id="section 3" class="section">
         <h2 class="title">Zaawansowany podgląd plików 3D</h2>
         <p class="description">Nie musisz już więcej bawić się w zgadywanki szukając swoich plików.
             Teraz Twoje modele mówią same za siebie.</p>
@@ -97,7 +94,7 @@
             <img src="Images/Frame 4.webp" alt="3d preview screenshot">
         </div>
     </div>
-    <div class="section">
+    <div id="section 4" class="section">
         <h2 class="title">Prawdziwy menadżer plików</h2>
         <p class="description">Naszym celem jest nie tylko pokazanie Twoich plików z najlepszej strony.
             Asystent TagIt pomaga Ci z utrzymaniem porządku na urządzeniu.*</p>
@@ -109,7 +106,7 @@
         </div>
         <p class="asterisk">*Asystent nie jest dostępny dla darmowych klientów</p>
     </div>
-    <div class="section">
+    <div id="section 5" class="section">
         <h2 class="title">Jednak lubisz foldery?</h2>
         <p class="description">Tak naprawdę nie możemy się pozbyć folderów dopóki nie przejmiemy całego świata.
             Do tego czasu możesz bawić się w hierarchię folderów do woli</p>
@@ -136,7 +133,7 @@
             <img src="Images/Frame 6.webp" alt="folder view screenshot">
         </div>
     </div>
-    <div class="section">
+    <div id="section 6" class="section">
         <h2 class="title">Oni już <em>oddali dusze</em> nam zaufali</h2>
         <div class="references">
             <div class="reference">
@@ -188,9 +185,9 @@
                     Slate helps you see how many more days.</p>
             </div>
         </div>
-    <div class="section">
-        <div class="references">
-            <div class="card">
+    <div id="section 7" class="section">
+        <div class="references pricing">
+            <div class="card price">
                 <div class="textContainer">
                     <h2 class="title">TagIt Free</h2>
                     <ul>
@@ -198,31 +195,37 @@
                         <li>- Brak asystenta</li>
                         <li>- Wsparcie społeczności</li>
                     </ul>
-                    <p class="description">Za darmo</p>
-                    <button class="button button3">Pobierz <strong>darmową</strong> wersje</button>
+                    <p class="description inPrice">Za darmo</p>
+                    <div>
+                        <button class="button button3">Pobierz <strong>darmową</strong> wersje</button>                        
+                    </div>
                 </div>
             </div>
-            <div class="card special">
+            <div class="card special price">
                 <div class="textContainer">
                     <h2 class="title">TagIt</h2>
                     <ul>
-                        <li>- Nielimitowane tagi</li>
-                        <li>- Asystent</li>
-                        <li>- Wsparcie</li>
+                        <li class="inPrice">- Nielimitowane tagi</li>
+                        <li class="inPrice">- Asystent</li>
+                        <li class="inPrice">- Wsparcie</li>
                     </ul>
-                    <h2 class="title cena">6.99zł/msc</h2>
-                    <button class="button button1">Kup teraz</button>
+                    <h2 class="title cena inPrice">6.99zł/msc</h2>
+                    <div>
+                        <button class="button button1 inPrice">Kup teraz</button>
+                    </div>
                 </div>
             </div>
-            <div class="card">
+            <div class="card price">
                 <div class="textContainer">
                     <h2 class="title">TagIt Enterprise</h2>
                     <ul>
                         <li>- Nietypowe wymagania</li>
                         <li>- Pomoc we wdrożeniu</li>
                     </ul>
-                    <p class="description">Cena indywidualna</p>
-                    <button class="button button1">Skontaktuj się z nami</button>
+                    <p class="description inPrice">Cena indywidualna</p>
+                    <div>
+                        <button class="button button1 inPrice">Skontaktuj się z nami</button>
+                    </div>
                 </div>
             </div>
         </div>
