@@ -18,11 +18,11 @@
     bottom: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100vw;
     height: 7.5vh;
     align-items: center;
-
+    padding: 0 10px;
 }
 
 .button{
@@ -126,8 +126,8 @@ footer p.description{
 }
 .start{
     z-index: -3;
-    background-image: linear-gradient(to bottom, rgba(18,18,18,.5) 0%, rgba(18,18,18,1) 100%),
-    url("Images/Frame\ 2.webp");
+    background-image: linear-gradient(to bottom, rgba(18,18,18,.8) 0%, rgba(18,18,18,1) 100%),
+    -webkit-image-set( url('Images/Frame2.webp') 1x, url('Images/Frame2hq.webp') 2x);
     background-repeat: no-repeat;
     background-position:center;
     margin: 0px;
@@ -153,22 +153,23 @@ footer p.description{
     scrollbar-width: none;
 
     padding: 30px;
-    width: 100vw;
+    width: auto;
+    max-width: 100vw;
     box-sizing: border-box;
     height: auto;
     top: 259px;
     overflow-x: scroll;
     
     background: #292929;
-    border-radius: 30px 0 0 30px;
+    border-radius: 30px;
 
     flex: none;
-    order: 1;
     flex-grow: 0;
 }
 
 .card2{
     flex-direction: column !important;
+    align-items: center;
 }
 
 body{
@@ -392,4 +393,22 @@ strong{
     box-sizing: border-box;
     width: auto;
     margin: auto;
+}
+
+.fileManScr{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+}
+
+@media (min-width:400px) {
+    .textContainer{
+        width: auto;
+        box-sizing: border-box;
+    }
+
+    .inCard{
+        box-sizing: border-box;
+        width: 50vw;
+    }
 }
