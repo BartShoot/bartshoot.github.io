@@ -103,6 +103,7 @@ footer p.description{
 .description{
     position: static;
     width: 90vw;
+    max-width: 400px;
     padding: 5vw;
     background: transparent;
     font-style: normal;
@@ -121,7 +122,7 @@ footer p.description{
 }
 
 .spacing{
-    margin: 50px;
+    margin: 20px;
 }
 .start{
     z-index: -3;
@@ -131,6 +132,10 @@ footer p.description{
     background-position:center;
     margin: 0px;
     background-position:left;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     padding: 20px 0px 0px 0px;
 }
 
@@ -141,14 +146,15 @@ footer p.description{
 .card{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-items: left;
+    margin: auto;
 
     -ms-overflow-style: none;
     scrollbar-width: none;
 
     padding: 30px;
-    width: auto;
+    width: 100vw;
+    box-sizing: border-box;
     height: auto;
     top: 259px;
     overflow-x: scroll;
@@ -186,6 +192,8 @@ body{
 }
 
 .references{
+    box-sizing: border-box;
+    max-width: 100vw;
     scroll-snap-align: center;
     padding: 2.5vw;
     overflow-x: scroll;
@@ -201,7 +209,7 @@ body{
     flex: 0 0 85vw;
     font-size: 12px;
     margin: 2vw;
-    width: 300px;
+    max-width: 350px;
     height: auto;
     padding: 40px;
     background: #292929;
@@ -226,6 +234,10 @@ body{
 
 .section{
     margin: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 ul{
@@ -267,6 +279,7 @@ strong{
     display: flex;
     flex-direction: column;
     width: 77vw;
+    max-width: 300px;
     margin: 10px 0;
 }
 
@@ -353,17 +366,30 @@ strong{
 
 .button1.inPrice{
     margin: 25px auto;
-    padding: 5vw 10vw;
+    padding: 15px 40px;
 }
 
 .card.footer{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items:flex-start;
     flex: auto;
 }
 
 .pricing{
+    box-sizing: border-box;
+    max-width: 100vw;
     align-items: center;
     justify-items: center;
+}
+
+.roundCorners{
+    border-radius: 30px;
+}
+
+.managerDsc{
+    box-sizing: border-box;
+    width: auto;
+    margin: auto;
 }
